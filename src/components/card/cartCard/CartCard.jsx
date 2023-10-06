@@ -1,8 +1,9 @@
 import { useContext } from "react";
-import "./CartCard.css";
 
 import PropTypes from "prop-types";
 import { CartContext } from "../../../contexts/CartContext";
+
+import "./cartCard.css";
 
 const CartCard = ({
   id,
