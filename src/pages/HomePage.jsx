@@ -60,7 +60,7 @@ const HomePage = () => {
           ))}
         </div>
         <div className="cards">
-          <section className="categories-box pt-5">
+          <section id="Акции" className="categories-box pt-5">
             <div className="ctgrBox d-flex align-items-center justify-content-between"></div>
             <div className="row">
               {newProducts.slice(0, 4).map((pr) => (

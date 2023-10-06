@@ -94,7 +94,7 @@ const Header = () => {
             </a>
             <ul className="navb" ref={navRef}>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#Акции">
                   {sale}
                 </a>
               </li>
