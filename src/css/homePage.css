@@ -15,7 +15,7 @@
   margin-bottom: 30px;
 }
 .categories-box {
-  padding-top: 70px;
+  padding-top: 60px;
 }
 
 .filter-btn {
@@ -57,7 +57,7 @@
   line-height: 40px !important;
 }
 .modal-total {
-  color:rgb(var(--btn-bg-clr));
+  color: rgb(var(--btn-bg-clr));
 
   font-size: 20px;
   font-weight: 600;
@@ -76,5 +76,41 @@
   border-bottom: none !important;
 }
 .badge {
+  background: rgb(var(--btn-bg-clr));
+}
+
+.checkAddress {
+  margin: 30px 0;
+  background: var(--lyt-clr);
+  padding: 16px 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkAddress input {
+  width: 770px;
+  padding: 13px 40px;
+  border-radius: 6px;
+  border: 1px solid #f0f0f0;
+  background: var(--lyt-clr);
+}
+
+.checkAddress p {
+  color: var(--tx-clr);
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.checkAddress button {
+  border: none;
+  padding: 13px 32px;
+  border-radius: 6px;
+
+  color: #ffffff;
+
   background: rgb(var(--btn-bg-clr));
 }

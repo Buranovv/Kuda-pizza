@@ -28,6 +28,9 @@ const RU = {
     btn: "Оформить заказ",
     total: "Итого",
   },
+  checkAddress: "Проверить адрес доставки",
+  address: "Адрес",
+  check: "Проверить",
 };
 
 const EN = {
@@ -60,6 +63,9 @@ const EN = {
     btn: "Checkout",
     total: "Total",
   },
+  checkAddress: "Check delivery address",
+  address: "Address",
+  check: "Check",
 };
 
 const language = {

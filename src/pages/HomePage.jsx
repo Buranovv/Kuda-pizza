@@ -12,15 +12,18 @@ import { LanguageContext } from "../contexts/LanguageContext";
 
 import { CartContext } from "../contexts/CartContext";
 import CartCard from "../components/card/cartCard/CartCard";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import "../css/homePage.css";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const HomePage = () => {
   const {
     lang: {
       btn: { filter },
       modal: { head, btn: btn1, total },
+      checkAddress,
+      address,
+      check,
     },
   } = useContext(LanguageContext);
   const { carts, show, handleClose, totalPrice } = useContext(CartContext);
@@ -71,6 +74,13 @@ const HomePage = () => {
               ))}
             </div>
           </section>
+          <div className="checkAddress">
+            <p>{checkAddress}</p>
+            <form className="d-flex gap-4">
+              <input type="text" placeholder={address} />
+              <button>{check}</button>
+            </form>
+          </div>
           {categories.map((ctgr, i) => (
             <section className="categories-box" id={ctgr.name} key={i}>
               <div className="ctgrBox d-flex align-items-center justify-content-between">
