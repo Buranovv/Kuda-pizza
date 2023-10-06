@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <footer>
-      <div className="container">Made by me</div>
+    <footer className="p-5">
+      <div className="container text-center">Made by Zahiriddin</div>
     </footer>
   );
 };
