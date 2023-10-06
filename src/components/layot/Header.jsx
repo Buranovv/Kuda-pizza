@@ -10,6 +10,7 @@ import basket from "../../assets/images/basket.svg";
 
 import "./header.css";
 import { CartContext } from "../../contexts/CartContext";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Header = () => {
   const {
@@ -58,7 +59,7 @@ const Header = () => {
           <div className="top-header">
             <div className="delivery d-flex align-items-center gap-5">
               <div className="location d-flex align-items-center gap-2">
-                <img src={location} alt="location" />
+                <LazyLoadImage effect="blur" src={location} alt="location" />
                 <span>{moscow}</span>⌵
               </div>
               <p className="address">{address}</p>
@@ -69,7 +70,7 @@ const Header = () => {
             <div className="d-flex align-items-center gap-5">
               <p>{workTime}</p>
               <div className="login d-flex align-items-center gap-2">
-                <img src={account} alt="" />
+                <LazyLoadImage effect="blur" src={account} alt="" />
                 <span>{loginTo}</span>
               </div>
               <Form.Group>
@@ -88,7 +89,7 @@ const Header = () => {
           <nav>
             <a href="#header">
               <div className="logo">
-                <img src={logo} alt="logo" />
+                <LazyLoadImage effect="blur" src={logo} alt="logo" />
                 <span>Куда пицца</span>
               </div>
             </a>
@@ -139,7 +140,7 @@ const Header = () => {
             </ul>
           </nav>
           <Button onClick={handleShow}>
-            <img src={basket} alt="" />
+            <LazyLoadImage effect="blur" src={basket} alt="" />
             <p>{totalPrice} ₽</p>
           </Button>
         </div>

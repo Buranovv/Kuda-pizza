@@ -5,6 +5,7 @@ import "./mainCard.css";
 import PropTypes from "prop-types";
 import { LanguageContext } from "../../../contexts/LanguageContext";
 import { CartContext } from "../../../contexts/CartContext";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const MainCard = ({
   id,
@@ -29,7 +30,7 @@ const MainCard = ({
     <div className="mainCard">
       <div className="img-box">
         {filter ? <span className="cardFilter">{filter}</span> : <></>}
-        <img width="280" src={image} alt="" />
+        <LazyLoadImage effect="blur" width="280" src={image} alt="" />
       </div>
       <div className="cardBody">
         <h5 className="cardTitle">{name}</h5>

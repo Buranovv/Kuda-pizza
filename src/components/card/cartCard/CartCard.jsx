@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { CartContext } from "../../../contexts/CartContext";
 
 import "./cartCard.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const CartCard = ({
   id,
@@ -22,7 +23,7 @@ const CartCard = ({
   return (
     <div className="cartCard">
       <div className="imgBox">
-        <img width="94" height="94" src={image} alt={name} />
+        <LazyLoadImage effect="blur" width="94" height="94" src={image} alt={name} />
       </div>
       <div className="cardBody">
         <h5>{name}</h5>

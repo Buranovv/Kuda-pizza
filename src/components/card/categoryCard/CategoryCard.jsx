@@ -1,3 +1,4 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import "./categoryCard.css";
 import PropTypes from "prop-types";
 
@@ -6,7 +7,7 @@ const CategoryCard = ({ name, image }) => {
     <a href={`#${name}`}>
       <div className="categoryCard">
         <div className="img-box">
-          <img src={image} alt={name} />
+          <LazyLoadImage  effect="blur" src={image} alt={name} />
         </div>
         <p>{name}</p>
       </div>

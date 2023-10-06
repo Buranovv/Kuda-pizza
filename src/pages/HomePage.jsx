@@ -14,6 +14,7 @@ import { CartContext } from "../contexts/CartContext";
 import CartCard from "../components/card/cartCard/CartCard";
 
 import "../css/homePage.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const HomePage = () => {
   const {
@@ -75,7 +76,7 @@ const HomePage = () => {
               <div className="ctgrBox d-flex align-items-center justify-content-between">
                 <h2 className="ctgrTitle">{ctgr.name}</h2>
                 <button className="filter-btn">
-                  <img src={filterImg} alt="filter" />
+                  <LazyLoadImage effect="blur" src={filterImg} alt="filter" />
                   {filter}
                 </button>
               </div>
